@@ -1,0 +1,20 @@
+&perturbo
+ prefix='lif-sp3'
+ calc_mode = 'diagmc-EZ'
+
+ DMC_Method = 0
+ band_min = 1
+ band_max = 1
+ zeroTMC = .true.
+ read_H = .true.
+ nsvd = 20 
+ nk_svd = 60
+ tauMin = 0.d0 
+ alpha_frohlich = 1.0
+ svd_dir = '../../pert-Htable/gkq-60'
+ 
+ ftemper = 'temper.in'
+ phfreq_cutoff = 1.0 !mev
+ print_sign = .false. 
+
+/

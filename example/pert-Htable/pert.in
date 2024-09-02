@@ -1,0 +1,11 @@
+&perturbo 
+ prefix='lif-sp3'
+ calc_mode = 'tabulate-H'
+ nk_svd    = 80
+
+ !!! svd setting !!! 
+ read_svd = .true. 
+ apply_svd = .true.
+ svd_dir = './gkq-80'
+ nsvd = 20
+/

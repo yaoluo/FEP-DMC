@@ -1,0 +1,6 @@
+Nmcmc(1e4)      Px  Py   Pz      mu(eV)  se_check   nq_se_checkmaxOrder 
+1000            0  0   0     0.0          0    50000 500
+types of update
+7
+prob for each update, for green-function, there are 7 updates  
+0.1 0.1 0.1 0.1 0.10 0.10 0.1

@@ -1,0 +1,10 @@
+&perturbo 
+ prefix='lif-sp3'
+ calc_mode = 'svd-elph'
+
+!svd setting
+ svd_dir   = './gkq'
+ read_svd  = .false.
+ apply_svd = .true.
+/
+

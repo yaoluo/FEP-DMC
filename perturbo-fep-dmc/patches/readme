@@ -1,0 +1,6 @@
+
+Patches:
+
+(1) PHonon/PH/dnsq_bare.f90: for DFPT+U calculation
+   patched dnsq_bare.f90 to output symmetrized dnsbare in pattern basis
+
