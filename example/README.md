@@ -4,7 +4,7 @@ Our First-prinicples DMC(FEP-DMC) is a module of the open-source package of Pert
 
 ## System Requirements
 ### Hardware requirement 
-The minimal RAM is 64GB to run the full Demo. 
+The minimal RAM is 64GB to run the full example. 
 ### OS reuqirement 
 This package is supported for Linux only. It has been tested on the following systems. 
 
@@ -71,32 +71,34 @@ and make the necessary changes to it. You will then be ready to compile PERTURBO
 ```bash
 $ make perturbo 
 
-#add perturbo bin to the path for the Demo
+#add perturbo bin to the path for the example
 $ export PATH="<QE-directory>/perturbo-fep-dmc/bin:$PATH"
 ```
 
 After the compiling, a directory called _"bin"_ is generated, which contains one executable, `perturbo.x`
 
-## Demo 
+## example 
 This whole process takes around 20 mins on my workstation.  
 We are going to calculate the formation energy of electron polarons in LiF with compressed electron-phonon interactions.
-This demo is dedicated to reproducing some points of Fig.2(b) in the main text.
+This example is dedicated to reproducing some points of Fig.2(b) in the main text.
+Before calculation, one should download the "lif-sp3_epwan.h5" file via this link "???". 
+This file contains the electron-phonon interactions. 
 There are three steps.
 ### 1. Compress e-ph 
 ```bash 
-$ cd Demo/pert-svd
+$ cd example/pert-svd
 $ ln -sf ../lif-sp3_epwan.h5
 $ ./run.sh 
 ```
 ### 2. Construct Hamiltonian table on uniform grid
 ```bash 
-$ cd Demo/pert-Htable
+$ cd example/pert-Htable
 $ ln -sf ../lif-sp3_epwan.h5
 $ ./run-nk.sh 
 ```
 ### 3. run FEP-DMC
 ```bash 
-$ cd Demo/E-nk
+$ cd example/E-nk
 
 # caluclate polaron binding energy for different size of grid 
 # 20^3, 40^3, 60^3, 80^3 
