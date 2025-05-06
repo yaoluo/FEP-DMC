@@ -1,5 +1,5 @@
 # FEP-DMC
-Reminder: this code was created to aid peer review of a forthcoming paper
+first-principles electron-phonon diagrammatic Monte Carlo simulation package. 
 
 ## Data sets 
 All the raw data and figure generating processes are included in `dataset/` for all the figures in our paper. 
