@@ -606,7 +606,7 @@ module multiphonon_update_matrix
       ivn1 = diagram%order + 1; ivn2 = diagram%order + 2
       vn1 => diagram%vertexList(ivn1); vn2 => diagram%vertexList(ivn2)
       !propose ph-momentum 
-      call sample_q_omp_int(diagram%seed,vn1%i_q,vn1%Pq,vn1); Pq = vn1%Pq
+      call sample_q_omp_int(diagram%seed,vn1%i_q,vn1%Pq,vn1); Pq = vn1%Pq; call cal_wq_int( vn1%i_q,     vn1%wq   )
 
       !new config 
       v_head => diagram%vertexList(1)
@@ -828,7 +828,7 @@ module multiphonon_update_matrix
       if(tauL>config%tauMax*0.5_dp) tauL = config%tauMax * 0.5_dp
       decay_exp =  minval(vn1%ekin) -  minval(vn1%ekout)  + vn1%wq(vn1%nu)
       call exp_sample_omp(diagram%seed,v_head%tau,tauL,decay_exp,vn1%tau,Pt1)
-
+      
 
       ![3.2] tau2 
       tauR = vR%tau 
