@@ -6,10 +6,14 @@ First-principles electron-phonon diagrammatic Monte Carlo simulation package, se
 > Nature Physics **21**, 1275–1282 (2025).  
 > [https://doi.org/10.1038/s41567-025-02954-1](https://doi.org/10.1038/s41567-025-02954-1)
 
+## Note
+This code is available for use in collaboration only. If you are interested, please contact Yao Luo at yaoluonju@gmail.com to discuss a potential collaboration.
+
 ## Data sets 
 All the raw data and figure generating processes are included in `dataset/` for all the figures in our paper.  
 
 ## Demo
 We provide a minimal demonstration on calculating the polaron formation energy in electrons of LiF in `example/`.  
 To reproduce the calculations, please follow `example/README.md`.  
+
 
